@@ -1,3 +1,4 @@
 #!/bin/bash
-mkdir dir_"$(date +"%d-%m-%y")"
-touch file_"$(date +"%H-%M-%S")"
+working_dir=$(pwd)
+mkdir  ${working_dir}/dir_"$(date +"%d-%m-%y")"
+touch ${working_dir}/file_"$(date +"%H-%M-%S")"
